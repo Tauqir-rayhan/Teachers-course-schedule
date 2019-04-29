@@ -1,0 +1,6 @@
+SELECT Start_time,s.room_number
+from time_slot as t,classroom as c,section as s
+where s.room_number=c.room_number and s.time_slot_id = t.time_slot_id and
+day="MW" and s.room_number=202 and s.semester="FALL" and s.year=2019
+
+SELECT building,room_number,capacity,Status   FROM classroom WHERE Status="empty"
